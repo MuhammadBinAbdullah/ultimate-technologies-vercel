@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Technologies | Free Masterclass</title>
+<meta name="theme-color" content="#080c18">
+<meta name="description" content="Register for the free video editing masterclass by Ultimate Technologies.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrapper">
+    <section class="brand-panel">
+        <div class="brand">
+            <img src="logo.png" alt="Ultimate Technologies Logo" class="brand-logo">
+        </div>
+        <div class="hero">
+            <div class="eyebrow">Your Creative Journey Starts Here</div>
+            <h1>Master The Art Of <span>Video Editing.</span></h1>
+            <p>Discover creative techniques, learn essential editing skills, and turn your ideas into engaging videos. Start learning with our free masterclass.</p>
+        </div>
+        <div class="feature-list">
+            <div class="feature"><span class="check">✓</span><span>100% Free Masterclass Registration</span></div>
+            <div class="feature"><span class="check">✓</span><span>Learn About Popular Editing Software</span></div>
+            <div class="feature"><span class="check">✓</span><span>For Beginners And Experienced Editors</span></div>
+        </div>
+        <div class="brand-footer">© 2026 Ultimate Technologies<br>Build your skills. Unleash your creativity.</div>
+    </section>
+
+    <section class="form-panel">
+        <div class="form-heading">
+            <div class="badge"><span class="badge-dot"></span> FREE MASTERCLASS</div>
+            <h2>Reserve Your Spot</h2>
+            <p>Complete the form below to register for our free video editing masterclass.</p>
+        </div>
+
+        <form id="registrationForm" action="https://formspree.io/f/xvkkrykg" method="POST">
+            <input type="hidden" name="_subject" value="New Ultimate Technologies Masterclass Registration">
+
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <div class="field"><span class="field-icon">♙</span>
+                    <input type="text" id="name" name="Full Name" placeholder="Enter your full name" autocomplete="name" maxlength="100" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <div class="field"><span class="field-icon">✉</span>
+                    <input type="email" id="email" name="Email" placeholder="you@example.com" autocomplete="email" maxlength="254" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp Number *</label>
+                <div class="field"><span class="field-icon">☎</span>
+                    <input type="tel" id="whatsapp" name="WhatsApp Number" placeholder="+92 300 1234567" autocomplete="tel" maxlength="25" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="experience">Experience Level *</label>
+                    <div class="field">
+                        <select id="experience" name="Experience Level" required>
+                            <option value="" disabled selected>Select level</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="software">Editing Software *</label>
+                    <div class="field">
+                        <select id="software" name="Preferred Software" required>
+                            <option value="" disabled selected>Select software</option>
+                            <option value="CapCut">CapCut</option>
+                            <option value="Adobe Premiere Pro">Premiere Pro</option>
+                            <option value="DaVinci Resolve">DaVinci Resolve</option>
+                            <option value="Other">Other</option>
+                            <option value="None Yet">Not chosen yet</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">REGISTER FOR FREE →</button>
+            <div id="status" role="status" aria-live="polite"></div>
+            <p class="privacy">By submitting this form, you agree to be contacted about the masterclass. Your information will be used to manage your registration.</p>
+        </form>
+    </section>
+</main>
+
+<div class="popup-overlay" id="successPopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup-box">
+        <div class="popup-icon">✓</div>
+        <h2 id="popupTitle">Registration Successful!</h2>
+        <p>Your registration has been submitted successfully. Thank you for joining the Ultimate Technologies Free Video Editing Masterclass!</p>
+        <button type="button" class="popup-button" id="popupOk">OK, GOT IT</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
